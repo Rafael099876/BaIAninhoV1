@@ -1,3 +1,4 @@
+
 import React, { createContext, useState, useContext, useEffect, ReactNode } from 'react';
 
 const translations = {
@@ -51,6 +52,8 @@ const translations = {
     amountSpent: 'Gasto no Último Mês',
     employeesList: 'Lista de Funcionários',
     position: 'Cargo',
+    paid: 'Pago',
+    overdue: 'Atrasado',
     // Suppliers Tab
     quantityByProductType: 'Quantidade por Tipo de Produto',
     productsInStock: 'Produtos em Estoque',
@@ -75,6 +78,19 @@ const translations = {
     sendMessage: 'Enviar mensagem',
     askBaianinho: 'Pergunte ao BaIAninho...',
     initialChatMessage: 'Olá! Sou o BaIAninho, seu assistente de logística. Como posso ajudar a otimizar suas operações hoje?',
+    // General & Statuses
+    all: 'Todos',
+    months: 'Meses',
+    productClass: 'Classe de produto',
+    in_stock: 'Em Estoque',
+    low_stock: 'Estoque Baixo',
+    out_of_stock: 'Sem Estoque',
+    present: 'Presente',
+    on_leave: 'De Licença',
+    absent: 'Ausente',
+    supplier: 'Fornecedor',
+    productsSupplied: 'Produtos Fornecidos',
+    deliveryRate: 'Taxa de Entrega no Prazo',
   },
   en: {
     // Header
@@ -126,6 +142,8 @@ const translations = {
     amountSpent: 'Amount Spent Last Month',
     employeesList: 'Employees List',
     position: 'Position',
+    paid: 'Paid',
+    overdue: 'Overdue',
     // Suppliers Tab
     quantityByProductType: 'Quantity by Product Type',
     productsInStock: 'Products in Stock',
@@ -150,6 +168,19 @@ const translations = {
     sendMessage: 'Send message',
     askBaianinho: 'Ask BaIAninho...',
     initialChatMessage: 'Hello! I\'m BaIAninho, your logistics assistant. How can I help optimize your operations today?',
+    // General & Statuses
+    all: 'All',
+    months: 'Months',
+    productClass: 'Product Class',
+    in_stock: 'In Stock',
+    low_stock: 'Low Stock',
+    out_of_stock: 'Out of Stock',
+    present: 'Present',
+    on_leave: 'On Leave',
+    absent: 'Absent',
+    supplier: 'Supplier',
+    productsSupplied: 'Products Supplied',
+    deliveryRate: 'On-Time Delivery Rate',
   },
 };
 

@@ -1,3 +1,4 @@
+
 import React, { useState, useMemo } from 'react';
 import { useAppContext } from '../../contexts/AppContext';
 import { transportKpiData, vehiclesData, expensesData, deliveryEmployeesData } from '../../data/mockData';
@@ -155,7 +156,9 @@ const ExpensesTab: React.FC = () => {
                                 <td className="py-2 px-3 font-medium text-slate-800 dark:text-slate-200">{item.name}</td>
                                 <td className="py-2 px-3">{item.deliveries}</td>
                                 <td className="py-2 px-3">
-                                    <span className={`px-2 py-1 text-xs font-semibold rounded-full ${getEmployeeStatusClass(item.status)}`}>{item.status}</span>
+                                    <span className={`px-2 py-1 text-xs font-semibold rounded-full ${getEmployeeStatusClass(item.status)}`}>
+                                        {t(item.status as any)}
+                                    </span>
                                 </td>
                             </tr>
                         )}
@@ -165,6 +168,7 @@ const ExpensesTab: React.FC = () => {
 
             {/* Sidebar content, spanning 1/3 of the width */}
             <div className="lg:col-span-1 flex flex-col gap-6">
+                {/* To change the height of the "Active Vehicles" selection table/card, adjust the class here (e.g., replace 'flex-1' with 'h-[300px]') */}
                 <div className="flex-1 min-h-0">
                     <FilterableKpiCard
                         title={t('activeVehicles')}
@@ -174,6 +178,7 @@ const ExpensesTab: React.FC = () => {
                         onFilterChange={setActiveVehicleFilters}
                     />
                 </div>
+                {/* To change the height of the "Total Expenses" selection table/card, adjust the class here (e.g., replace 'flex-1' with 'h-[300px]') */}
                 <div className="flex-1 min-h-0">
                     <FilterableKpiCard
                         title={t('totalExpenses')}

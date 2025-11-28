@@ -33,10 +33,20 @@ const LoginPage: React.FC = () => {
         <div className="relative flex flex-col items-center justify-center min-h-screen bg-[#d9d9d9] dark:bg-slate-900 text-slate-800 dark:text-slate-200 p-4 page-transition">
             <div className="text-center mb-12">
                 <div className="inline-block mb-4">
-                    <svg width="80" height="80" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#b71c1c" d="M128 24a104 104 0 1 0 104 104A104.11 104.11 0 0 0 128 24Zm0 192a88 88 0 1 1 88-88a88.1 88.1 0 0 1-88 88Z"/>
-                        <path fill="#FFF" d="M149.33 118.52a20.06 20.06 0 0 0-21.33-21.33a20.06 20.06 0 0 0-21.34 21.33a20.06 20.06 0 0 0 21.34 21.33a20.06 20.06 0 0 0 21.33-21.33ZM128 132a12 12 0 1 1 12-12a12 12 0 0 1-12 12Z"/>
-                        <path fill="#FFF" d="M128 24a104 104 0 0 0-96.44 148.43L70.5 133.5a59.88 59.88 0 0 1 114.93 0l41.06 39.36A103.43 103.43 0 0 0 128 24Z"/>
+                    <svg width="80" height="80" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                      <circle cx="50" cy="50" r="49" fill="#00529F"/>
+                      <circle cx="50" cy="50" r="44" stroke="#2196F3" strokeWidth="4" fill="none"/>
+                      
+                      <g transform="translate(10, 12) scale(0.8)">
+                        <path d="M 35 25 L 70 25 L 55 50 L 80 75 L 35 75 Z"
+                              fill="#00529F"/>
+                        
+                        <path d="M 35 25 L 70 25 L 55 50 L 35 50 Z" 
+                              fill="#b71c1c"/>
+                              
+                        <path d="M 35 25 L 70 25 L 55 50 L 80 75 L 35 75 Z" 
+                              stroke="white" strokeWidth="8" strokeLinejoin="miter" strokeLinecap="square" fill="none"/>
+                      </g>
                     </svg>
                 </div>
                 <h1 className="text-5xl font-extrabold text-slate-900 dark:text-white">{t('welcome')}</h1>

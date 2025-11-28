@@ -1,3 +1,4 @@
+
 import type { ElementType } from 'react';
 
 export interface Kpi {
@@ -15,6 +16,7 @@ export interface InventoryItem {
   category: string;
   stock: number;
   status: 'In Stock' | 'Low Stock' | 'Out of Stock';
+  monthlySales: { [key: string]: number };
 }
 
 export interface MonthlySale {
@@ -42,9 +44,23 @@ export interface ProductTypeSale {
   [key: string]: string | number;
 }
 
+export interface ProductTypeMonthlyData {
+    name: string;
+    monthlySales: {
+        [key: string]: number;
+    };
+}
+
 export interface SellerSale {
   name: string;
   sales: number;
+}
+
+export interface SellerMonthlyData {
+    name: string;
+    monthlySales: {
+        [key: string]: number;
+    };
 }
 
 export interface Subscriber {
@@ -52,6 +68,7 @@ export interface Subscriber {
   name: string;
   cardId: string;
   lastMonthSpending: number;
+  status: 'Paid' | 'Overdue';
 }
 
 export interface Employee {
